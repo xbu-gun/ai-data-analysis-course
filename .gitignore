@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+.openai/
+.sites/
+.input-cache/
+过程代码/模型/
+过程代码/research_v2/work/

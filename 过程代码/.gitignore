@@ -1,0 +1,13 @@
+.venv/
+.tmp/
+.cache/
+__pycache__/
+中间数据/
+模型/
+*.joblib
+*.safetensors
+*.npy
+*.npz
+*.log
+*.key
+.env

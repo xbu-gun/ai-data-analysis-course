@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "source_root": "../AI数据分析课程资料 261031 完整版/AI数据分析课程资料 261031",
+  "output_root": "../成果交付",
+  "seed": 42,
+  "fraud_train_years": [2007, 2019],
+  "fraud_test_years": [2020, 2021],
+  "fraud_cv_splits": 5,
+  "unsupervised_main_k": 2,
+  "unsupervised_appendix_k": 4,
+  "bankruptcy_split": [0.70, 0.15, 0.15],
+  "corpus_selection": "teacher_demo_company_year_keys",
+  "corpus_expected_documents": 1123,
+  "culture_review_drop_words": ["霍晓馨", "刘俊君", "梦之生", "滴滴", "国家教育部", "铁山", "牛行", "虎视", "物畅", "凭海", "馥郁", "海派", "酿药", "路况", "外貌", "催款函", "三高", "四关", "五是", "六是", "数个", "各条", "一站", "此基础", "以事", "于行", "起来", "从而"],
+  "embedding_strategy": "head_middle_tail_mean",
+  "evaluation_class_weight_fraud": null,
+  "application_class_weight_fraud": "balanced",
+  "application_tree": {"max_depth": 5, "min_samples_leaf": 100, "random_state": 42},
+  "source_data_policy": "read_only",
+  "public_release_status": "local_only_pending_course_data_permission"
+}

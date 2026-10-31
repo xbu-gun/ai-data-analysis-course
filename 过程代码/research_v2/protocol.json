@@ -1,0 +1,41 @@
+{
+  "study_id": "v2_01_source_audit_and_application_backtest",
+  "purpose": "原始口径核查和网站实际应用树的历史训练期回测",
+  "authorizations": {
+    "source_data": "read_only",
+    "v1_results": "preserve",
+    "publication": "local_only_pending_course_data_permission"
+  },
+  "backtest": {
+    "sample": "fraud original train indices only: label years 2007-2019",
+    "folds": 5,
+    "split": "TimeSeriesSplit over unique years, same boundaries as v1",
+    "model": "DecisionTreeClassifier",
+    "parameters": {"max_depth": 5, "min_samples_leaf": 100, "class_weight": "balanced", "random_state": 42},
+    "features": "same 36 non-ID non-label columns as v1 application tree",
+    "preprocessing": "replace inf with NaN, training-fold medians only, no clipping or scaling, same as v1 application",
+    "all_missing_training_columns": "user approved: disable within that fold only; retain when training observations exist; never borrow future medians",
+    "tuning": "none",
+    "decision_rules": ["weighted_score >= 0.5", "round(100*(1-weighted_score),1) < 60"],
+    "review_budgets": [0.05, 0.10],
+    "quota_rounding": "ceil",
+    "ties": "report strict higher-score set, boundary tie size, exact-quota min/max and expected uniform random tie sampling; also report all-boundary-ties inclusion",
+    "uncertainty": "500 company-block bootstrap resamples of fixed out-of-fold predictions, seed 42; no model refitting",
+    "held_out_years_2020_2021": "excluded",
+    "interpretation": "historical training-period development backtest; not a fresh untouched final test"
+  },
+  "raw_finance_spotcheck": {
+    "company_codes": ["000001", "000002", "600518", "600519"],
+    "panel_target_years": [2007, 2012, 2019],
+    "application_file": "panel_ml_2025_unlabeled.csv",
+    "candidate_financial_years": "target year and target year minus one; application compare financial years 2024 and 2025",
+    "report_filter": "Typrep=A, Accper ends 12-31",
+    "duplicate_policy": "preserve all candidates, report ambiguities, do not silently choose corrected records"
+  },
+  "bankruptcy_source_check": {
+    "official_landing_page": "https://archive.ics.uci.edu/dataset/572/taiwanese+bankruptcy+prediction",
+    "official_download": "https://archive.ics.uci.edu/static/public/572/taiwanese%2Bbankruptcy%2Bprediction.zip",
+    "purpose": "provenance equality check only; no replacement of course input",
+    "distribution_diagnostics": "original bankruptcy train indices only"
+  }
+}
