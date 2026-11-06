@@ -204,12 +204,13 @@ def sources():
     for p in HERE.glob('*.py'):copy(p,REPO/'过程代码/final_submission'/p.name,sanitize=True)
     for p in HERE.glob('*.md'):copy(p,REPO/'过程代码/final_submission'/p.name,sanitize=True)
     readme=(REPO/'README.md').read_text(encoding='utf-8')
+    readme=re.sub(r'https://financial-signals-zs\.[a-z0-9.-]+\.chatgpt\.site',WEB,readme)
     readme=readme.replace('真人视频另由本人录制。','两分钟介绍视频已完成，采用 AI 合成男声与动态图表，片头披露；未模拟本人声音或形象。')
     additions=f'\n- 两分钟视频：[播放 / 下载 MP4]({WEB}/downloads/project_video_zs.mp4)\n- 综合报告：[下载 PDF]({WEB}/downloads/analysis_report_zs.pdf)\n- 最终提交材料：[精简提交包]({WEB}/downloads/final_submission_zs.zip)\n'
     readme=readme.replace('## 作业对应',additions+'\n## 作业对应') if '精简提交包' not in readme else readme
     (REPO/'README.md').write_text(readme,encoding='utf-8')
     config_path=REPO/'过程代码/research_v2/release_config.json'
-    config=json.loads(config_path.read_text(encoding='utf-8'));config['video_mode']='AI 合成男声与动态图表，成片 120 秒，已披露合成方式';config['status']='final_submission_assembled';config['date_beijing']=DATE
+    config=json.loads(config_path.read_text(encoding='utf-8'));config['video_mode']='AI 合成男声与动态图表，成片 120 秒，已披露合成方式';config['status']='final_submission_assembled';config['date_beijing']=DATE;config['expected_site_url']=WEB
     config_path.write_text(json.dumps(config,ensure_ascii=False,indent=2),encoding='utf-8')
     config_path=REPO/'过程代码/project_config.json'
     config=json.loads(config_path.read_text(encoding='utf-8'));config['public_release_status']='public_data_permission_confirmed_2026-10-31'

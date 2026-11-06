@@ -74,7 +74,7 @@ def main():
                 scenes=SCENES,
                 facts=dict(fraud=fraud, bankruptcy=bank, topics=primary, application=app),
                 references=[str(p.relative_to(ROOT)).replace('\\','/') for p in [fraud_path,bank_path,text_path,app_path]],
-                website='https://financial-signals-zs.satiny-grebe-2478.chatgpt.site',
+                website=json.loads((ROOT/'过程代码/research_v2/release_config.json').read_text(encoding='utf-8'))['expected_site_url'],
                 github='https://github.com/xbu-gun/ai-data-analysis-course')
     (HERE / 'storyboard.json').write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding='utf-8')
     text = '# AI 视频分镜与旁白（公开署名 zs）\n\n'

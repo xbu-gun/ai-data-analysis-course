@@ -229,7 +229,7 @@ def closing(d):
     line(d,[(124,614),(1788,614)],'#4B6266',2)
     text(d,(126,644),'网站  +  代码仓库  +  一页结果说明',37,'#E5EFDE',True)
     text(d,(126,709),'github.com/xbu-gun/ai-data-analysis-course',31,'#A7D5C5',latin=True)
-    text(d,(126,761),'financial-signals-zs.satiny-grebe-2478.chatgpt.site',27,'#A7D5C5',latin=True)
+    text(d,(126,761),CFG['website'].removeprefix('https://'),27,'#A7D5C5',latin=True)
 
 
 DRAWERS=[opening,data_scene,model_scene,website_scene,text_scene,evidence_scene,closing]

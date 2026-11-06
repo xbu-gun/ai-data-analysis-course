@@ -3,7 +3,7 @@
   "voice": "Microsoft Kangkang",
   "voice_rate": 0,
   "disclosure": "AI 合成旁白与动态图表；未模拟作者本人声线或形象。",
-  "date_beijing": "2026-11-06T19:12:04+08:00",
+  "date_beijing": "2026-11-06T19:35:56+08:00",
   "target_seconds": 120,
   "resolution": [
     1920,
@@ -227,6 +227,6 @@
     "成果交付/07_优化研究_v2/06_全文主题对照/全文主题对照摘要.json",
     "成果交付/03_2025风险预测/应用模型摘要_v1.json"
   ],
-  "website": "https://financial-signals-zs.satiny-grebe-2478.chatgpt.site",
+  "website": "https://financial-signals-zs.xbu.chatgpt.site",
   "github": "https://github.com/xbu-gun/ai-data-analysis-course"
 }

@@ -2,15 +2,15 @@
 
 署名：**zs**。AI数据分析课程作业。
 
-- 网站：[https://financial-signals-zs.satiny-grebe-2478.chatgpt.site](https://financial-signals-zs.satiny-grebe-2478.chatgpt.site)
-- 一页结果说明：[下载PDF](https://financial-signals-zs.satiny-grebe-2478.chatgpt.site/downloads/onepage_zs.pdf)
-- a—c完整成果：[教师核查包](https://financial-signals-zs.satiny-grebe-2478.chatgpt.site/downloads/teacher_results.zip)
+- 网站：[https://financial-signals-zs.xbu.chatgpt.site](https://financial-signals-zs.xbu.chatgpt.site)
+- 一页结果说明：[下载PDF](https://financial-signals-zs.xbu.chatgpt.site/downloads/onepage_zs.pdf)
+- a—c完整成果：[教师核查包](https://financial-signals-zs.xbu.chatgpt.site/downloads/teacher_results.zip)
 - 数据与方法：全部数值来自本项目实际运行；来源为课程资料。使用AI符合课程安排，人的选择与AI执行分开记录。
 
 
-- 两分钟视频：[播放 / 下载 MP4](https://financial-signals-zs.satiny-grebe-2478.chatgpt.site/downloads/project_video_zs.mp4)
-- 综合报告：[下载 PDF](https://financial-signals-zs.satiny-grebe-2478.chatgpt.site/downloads/analysis_report_zs.pdf)
-- 最终提交材料：[精简提交包](https://financial-signals-zs.satiny-grebe-2478.chatgpt.site/downloads/final_submission_zs.zip)
+- 两分钟视频：[播放 / 下载 MP4](https://financial-signals-zs.xbu.chatgpt.site/downloads/project_video_zs.mp4)
+- 综合报告：[下载 PDF](https://financial-signals-zs.xbu.chatgpt.site/downloads/analysis_report_zs.pdf)
+- 最终提交材料：[精简提交包](https://financial-signals-zs.xbu.chatgpt.site/downloads/final_submission_zs.zip)
 
 ## 作业对应
 
