@@ -7,6 +7,11 @@
 - a—c完整成果：[教师核查包](https://financial-signals-zs.satiny-grebe-2478.chatgpt.site/downloads/teacher_results.zip)
 - 数据与方法：全部数值来自本项目实际运行；来源为课程资料。使用AI符合课程安排，人的选择与AI执行分开记录。
 
+
+- 两分钟视频：[播放 / 下载 MP4](https://financial-signals-zs.satiny-grebe-2478.chatgpt.site/downloads/project_video_zs.mp4)
+- 综合报告：[下载 PDF](https://financial-signals-zs.satiny-grebe-2478.chatgpt.site/downloads/analysis_report_zs.pdf)
+- 最终提交材料：[精简提交包](https://financial-signals-zs.satiny-grebe-2478.chatgpt.site/downloads/final_submission_zs.zip)
+
 ## 作业对应
 
 | 任务 | 交付 |
@@ -41,7 +46,7 @@
 
 ## 本人与AI
 
-zs决定样本、权重、噪声词处理及展示方案；AI协助代码实现、计算、语境初审和证据整理。没有声称AI审阅等于独立人工标注。真人视频另由本人录制。
+zs决定样本、权重、噪声词处理及展示方案；AI协助代码实现、计算、语境初审和证据整理。没有声称AI审阅等于独立人工标注。两分钟介绍视频已完成，采用 AI 合成男声与动态图表，片头披露；未模拟本人声音或形象。
 
 ## 公开范围
 
